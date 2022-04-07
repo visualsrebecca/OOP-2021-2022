@@ -18,6 +18,8 @@ public class ColorfulLife extends PApplet {
                 setCell(board, row, col, -1);
             }
         }
+
+        
     }
 
     public int countNeighbours(int row, int col)
