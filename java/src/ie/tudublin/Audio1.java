@@ -9,8 +9,11 @@ import processing.core.PApplet;
 public class Audio1 extends PApplet
 {
     Minim minim;
+    //takes audio files
     AudioPlayer ap;
+    //takes audio from microphone
     AudioInput ai;
+    //helps process audio
     AudioBuffer ab;
 
     int mode = 0;
@@ -36,8 +39,9 @@ public class Audio1 extends PApplet
 
     public void settings()
     {
-        //size(1024, 1000, P3D);
-        fullScreen(P3D, SPAN);
+        //code doesn't work with P3D included
+        size(1024, 1000);
+        //fullScreen(P3D, SPAN);
     }
 
     public void setup()
@@ -46,7 +50,7 @@ public class Audio1 extends PApplet
         // Uncomment this to use the microphone
         // ai = minim.getLineIn(Minim.MONO, width, 44100, 16);
         // ab = ai.mix; 
-        ap = minim.loadFile("heroplanet.mp3", 1024);
+        ap = minim.loadFile("firstclass.mp3", 1024);
         ap.play();
         ab = ap.mix;
         colorMode(HSB);

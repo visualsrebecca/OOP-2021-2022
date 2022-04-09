@@ -46,7 +46,8 @@ public class Audio2 extends PApplet
 
     public void settings()
     {
-        size(1024, 1000, P3D);
+        //code doesn't run unless I take out P3D???
+        size(1024, 1000);
         //fullScreen(P3D, SPAN);
     }
 
