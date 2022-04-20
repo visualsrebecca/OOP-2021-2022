@@ -55,11 +55,11 @@ public class Audio2 extends PApplet
     {
         minim = new Minim(this);
         // Uncomment this to use the microphone
-        ai = minim.getLineIn(Minim.MONO, width, 44100, 16);
-        ab = ai.mix; 
-        //ap = minim.loadFile("heroplanet.mp3", 1024);
-        //ap.play();
-        //ab = ap.mix;
+        //ai = minim.getLineIn(Minim.MONO, width, 44100, 16);
+        //ab = ai.mix; 
+        ap = minim.loadFile("FirstClass.mp3", 1024);
+        ap.play();
+        ab = ap.mix;
         colorMode(RGB);
 
         fft = new FFT(1024, 44100);

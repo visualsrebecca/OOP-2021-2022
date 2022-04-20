@@ -50,7 +50,7 @@ public class Audio1 extends PApplet
         // Uncomment this to use the microphone
         // ai = minim.getLineIn(Minim.MONO, width, 44100, 16);
         // ab = ai.mix; 
-        ap = minim.loadFile("firstclass.mp3", 1024);
+        ap = minim.loadFile("FirstClass.mp3", 1024);
         ap.play();
         ab = ap.mix;
         colorMode(HSB);
